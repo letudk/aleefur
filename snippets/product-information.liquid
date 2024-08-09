@@ -372,11 +372,11 @@
                                         </a>
                                 {%- endif -%}
                             </div>
-                            <!-- {% if block.settings.enable_payment_button and current_variant.available %} -->
-                                <!-- <div class="col col-lg-4{% if preOrder %} d-none{% endif %}"> -->
-                                    <!-- {{ form | payment_button }} -->
-                                <!-- </div> -->
-                          <!--   {% endif %} -->
+                             {% if block.settings.enable_payment_button and current_variant.available %}
+                                <div class="col col-lg-4{% if preOrder %} d-none{% endif %}"> 
+                                   {{ form | payment_button }} 
+                                </div> 
+                          {% endif %} 
 
                                
 
