@@ -321,7 +321,7 @@
         "color_bg": "#ffffff",
         "color_header_text": "#222222",
         "logo": "shopify:\/\/shop_images\/bannerlogolo_3ccb3dfb-57d2-49db-8036-53337115e0b7.jpg",
-        "logo_width": 90,
+        "logo_width": 120,
         "sticky_header_type": "on-scroll-up",
         "menu": "main-menu"
       }
