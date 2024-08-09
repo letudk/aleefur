@@ -81,7 +81,7 @@
         "d2556500-9561-429c-a87a-8081f074e2cb": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<div class=\"vela-free-shipping-label\">\n    <span class=\"icon me-2\">{% render 'icons', icon: 'box', attr: 'width=\"16\"' %}<\/span>\n    <span class=\"label\">Free Shipping &amp; Returns In US.<\/span>\n<\/div>",
+            "custom_liquid": "<div class=\"vela-free-shipping-label\">\n    <span class=\"icon me-2\">{% render 'icons', icon: 'box', attr: 'width=\"16\"' %}<\/span>\n    <span class=\"label\">Free Shipping.<\/span>\n<\/div>",
             "block_margin": "mb-4"
           }
         },
