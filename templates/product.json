@@ -61,7 +61,7 @@
             "quantity_enabled": true,
             "quantity_selector": "select",
             "enable_payment_button": false,
-            "product_wishlist": true,
+            "product_wishlist": false,
             "product_question": true
           }
         },
