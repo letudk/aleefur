@@ -26,7 +26,7 @@
 							<div class="col-12 footer-col" style="--dsk-mx: {{ block.settings.desk_width}}%;">
 								<div class="footer-newsletter">
 									{%- if block.settings.newsletter_title != blank -%}
-										<h5 class="footer__title py-1 mb-0 mb-md-3 d-flex justify-content-between">{{ block.settings.newsletter_title }}</h5>
+										<h4 class="footer__title py-1 mb-0 mb-md-3 d-flex justify-content-between">{{ block.settings.newsletter_title }}</h4>
 									{%- endif -%}
 									<div class="footer-newsletter__content ">
 										{% assign newsletterCaption = block.settings.newsletter_caption %}
@@ -41,7 +41,7 @@
 							<div class="col-12 footer-col" style="--dsk-mx: {{ block.settings.desk_width}}%;">
 								<div class="footer-info accordion-footer">
 									{%- if block.settings.contactinfo_heading != blank -%}
-										<h5 class="footer__title py-1 mb-0 mb-md-3 d-flex justify-content-between">{{ block.settings.contactinfo_heading }} {% render 'icons', icon: 'angle-down', attr: 'width="10"' class: "d-md-none" %}</h5>
+										<h4 class="footer__title py-1 mb-0 mb-md-3 d-flex justify-content-between">{{ block.settings.contactinfo_heading }} {% render 'icons', icon: 'angle-down', attr: 'width="10"' class: "d-md-none" %}</h4>
 									{%- endif -%}
 									<div class="footer-info__content {% if block.settings.contactinfo_heading != blank %} accordion-footer__content{% endif %}">
 										<div class="pt-1 pt-md-0">
@@ -59,7 +59,7 @@
 							<div class="col-12 footer-col" style="--dsk-mx: {{ block.settings.desk_width}}%;">
 								<div class="footer-image-list accordion-footer">
 									{%- if block.settings.title != blank -%}
-										<h5 class="footer__title py-1 mb-0 mb-md-3 footer__title py-1 mb-0 mb-md-3 d-flex justify-content-between">{{ block.settings.title }} {% render 'icons', icon: 'angle-down', attr: 'width="10"' class: "d-md-none" %}</h5>
+										<h4 class="footer__title py-1 mb-0 mb-md-3 footer__title py-1 mb-0 mb-md-3 d-flex justify-content-between">{{ block.settings.title }} {% render 'icons', icon: 'angle-down', attr: 'width="10"' class: "d-md-none" %}</h4>
 									{%- endif -%}
 									<div class="footer-info__content pt-2{% if block.settings.title != blank %} accordion-footer__content{% endif %}">
 										<div class="row g-2 row-cols-4">
