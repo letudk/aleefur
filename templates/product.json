@@ -307,6 +307,7 @@
     },
     "product-viewed": {
       "type": "product-viewed",
+      "disabled": true,
       "settings": {
         "full_with": false,
         "max_with": "",
