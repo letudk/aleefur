@@ -71,6 +71,15 @@
             "product_question": true
           }
         },
+        "text_Dyk8yD": {
+          "type": "text",
+          "settings": {
+            "text": "<h4><strong>Your Delivery Options<\/strong><\/h4>",
+            "text_color": "",
+            "text_size": 15,
+            "block_margin": "mb-0"
+          }
+        },
         "cc6513a2-5262-43d7-b018-6cbea19b910e": {
           "type": "custom_liquid",
           "settings": {
@@ -203,6 +212,7 @@
         "price",
         "c04d58d1-7e33-4924-875c-87b293144f76",
         "buy_buttons",
+        "text_Dyk8yD",
         "cc6513a2-5262-43d7-b018-6cbea19b910e",
         "d2556500-9561-429c-a87a-8081f074e2cb",
         "text_CJWAD4",
