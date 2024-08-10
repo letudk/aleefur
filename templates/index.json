@@ -145,7 +145,7 @@
         "slideshow-height": "450px",
         "slideshow-theight": "350px",
         "slideshow-mheight": "300px",
-        "navigation": false,
+        "navigation": true,
         "pagination": true,
         "fade": false,
         "autoplay": false,
