@@ -103,7 +103,7 @@
     style="padding-top:{{ padding_top }}%;" role="img" {% if image_style %}style="max-width: {{ max_width_image }}px;"{% endif %}>
                 <img
                     class="position-absolute top-50 translate-middle-y start-0 w-100 h-auto"
-                    srcset="{% render 'bgset', image: image, crop: image_crops,image_ratio: image_ratio, images_size: images_size, max_width_image: max_width_image %}"
+                    srcset="{% render 'bgset', image: image, crop: image_crops,image_ratio: image_ratio, images_size: images_size %}"
                     data-sizes="auto"
                     src="{{ image | img_url: images_size, crop: image_crops }}"
                     alt="{{ image.alt | escape }}"
