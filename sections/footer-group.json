@@ -11,6 +11,20 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "html_DcM8jz": {
+      "type": "html",
+      "settings": {
+        "full_with": false,
+        "max_with": "",
+        "color_bg": "rgba(0,0,0,0)",
+        "padding_block": "",
+        "padding_block_m": "",
+        "margin_block": "",
+        "heading": "",
+        "sub_heading": "sub heading",
+        "content": "<script>$(document).ready(function() {\n    \/\/ Kiểm tra nếu thẻ a với class active đã được kích hoạt\n    if ($('.more-info-tabs__nav-link.active[data-bs-toggle=\"tab\"][href=\"#js-more-info-tabs-review\"]').length) {\n        \/\/ Hiển thị div với class \"noreviews-wrapper\"\n        $('.noreviews-wrapper').show();\n    } else {\n        \/\/ Ẩn div nếu không có class active\n        $('.noreviews-wrapper').hide();\n    }\n    \n    \/\/ Thêm sự kiện khi tab được click\n    $('.more-info-tabs__nav-link').on('click', function() {\n        if ($(this).hasClass('active') && $(this).attr('href') === '#js-more-info-tabs-review') {\n            $('.noreviews-wrapper').show();\n        } else {\n            $('.noreviews-wrapper').hide();\n        }\n    });\n});\n<\/script>"
+      }
+    },
     "6673fe71-fbb3-406b-bb34-a1de9b3a3636": {
       "type": "newsletter",
       "settings": {
@@ -105,6 +119,7 @@
     }
   },
   "order": [
+    "html_DcM8jz",
     "6673fe71-fbb3-406b-bb34-a1de9b3a3636",
     "footer",
     "copy-right"
