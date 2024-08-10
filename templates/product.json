@@ -298,8 +298,8 @@
         "full_with": false,
         "max_with": "",
         "color_bg": "rgba(0,0,0,0)",
-        "padding_block": "20px 0 50px",
-        "padding_block_m": "55px 0 60px",
+        "padding_block": "20px 0 20px",
+        "padding_block_m": "25px 0 20px",
         "margin_block": "",
         "review_title": "",
         "product_review": "tab"
