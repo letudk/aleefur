@@ -15,7 +15,7 @@
       "type": "banner-top",
       "settings": {
         "bannertop_image": "shopify:\/\/shop_images\/11_5ff5ea89-7ac4-4e50-bcde-bec7dd60b3df.jpg",
-        "bannertop_link": ""
+        "bannertop_link": "shopify:\/\/collections\/frontpage"
       }
     },
     "announcement-bar": {
