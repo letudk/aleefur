@@ -93,7 +93,7 @@
       "settings": {
         "full_with": false,
         "max_with": "",
-        "padding_block": "0",
+        "padding_block": "10px 0",
         "padding_block_m": "0",
         "copyright": "Copyright ©  <span class=\"text-primary\">aleefurnishing<\/span>. All rights reserved.",
         "color_bg": "#232f3e",
