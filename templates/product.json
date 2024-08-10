@@ -35,11 +35,9 @@
             "block_margin": "mb-2"
           }
         },
-        "491c3678-a254-4566-821b-051ef3bc6c42": {
-          "type": "reivew",
-          "disabled": true,
+        "judge_me_reviews_preview_badge_BUXyty": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
-            "block_margin": "mb-3"
           }
         },
         "price": {
@@ -210,7 +208,7 @@
       },
       "block_order": [
         "title",
-        "491c3678-a254-4566-821b-051ef3bc6c42",
+        "judge_me_reviews_preview_badge_BUXyty",
         "price",
         "c04d58d1-7e33-4924-875c-87b293144f76",
         "buy_buttons",
@@ -313,6 +311,22 @@
         "product_review": "tab"
       }
     },
+    "1723258444904f1e00": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_GXctVB": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_GXctVB"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "opinew-reviews-product-page-code": {
       "type": "apps",
       "custom_css": [
@@ -345,6 +359,7 @@
     "main",
     "product-recommendations",
     "producttab-information",
+    "1723258444904f1e00",
     "opinew-reviews-product-page-code",
     "product-viewed"
   ]
