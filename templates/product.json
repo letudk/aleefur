@@ -37,6 +37,7 @@
         },
         "491c3678-a254-4566-821b-051ef3bc6c42": {
           "type": "reivew",
+          "disabled": true,
           "settings": {
             "block_margin": "mb-3"
           }
