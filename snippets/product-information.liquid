@@ -332,7 +332,7 @@
                                                 </button>
                                             </div>
                                         {%- else -%}
-                                            <select name="quantity" id="Quantity" class="product-quantity__select form-select">
+                                            <select name="quantity" id="Quantity" for ="quantity" class="product-quantity__select form-select">
                                                 {%- for i in (1..10) -%}
                                                     <option {% if forloop.first %}selected="selected"{% endif %} value="{{ i }}">{{ i }}</option>
                                                 {%- endfor -%}
