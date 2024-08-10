@@ -101,7 +101,7 @@
 {%- endcapture -%}
     <div class="card_wrap{% if image_class != '' %} {{ image_class }}{% endif %} w-100" {% if image_style %}style="max-width: {{ max_width_image }}px;"{% endif %}>
         {%- if image_style -%}
-            <div class="card__image position-relative lazyload js" style="padding-top:{{ padding_top }}%;" >
+            <!-- <div class="card__image position-relative lazyload js" style="padding-top:{{ padding_top }}%;" > -->
                 <img
                     class="position-absolute top-50 translate-middle-y start-0 w-100 h-auto"
                     srcset="{% render 'bgset', image: image, crop: image_crops,image_ratio: image_ratio, images_size: images_size, max_width_image: max_width_image %}"
@@ -112,15 +112,15 @@
                     width="{{ max_width_image }}"
                     height="{{ max_height_image }}"
                 >
-            </div>
+             <!-- </div>  -->
         {% else %}
-            <div class="card__image position-relative lazyload js" style="padding-top:{{ padding_top }}%;" role="img"
+            <div class="card__image position-relative lazyload js" style="padding-top:{{ padding_top }}%;" role="img"  -->
             aria-label="{{ image.alt | escape }}"
             data-alt="{{ image.alt | escape }}"
             data-bgset="{% render 'bgset', image: image, crop: image_crops, image_ratio: image_ratio, images_size: images_size, max_width_image: max_width_image %}"
             data-sizes="auto"
             >
-            </div>
+            <!-- </div> -->
         {% endif %}
     </div> 
 
