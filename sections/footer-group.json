@@ -79,13 +79,13 @@
       "settings": {
         "full_with": false,
         "max_with": "",
-        "padding_block": "90px 0",
+        "padding_block": "40px 0",
         "padding_block_m": "60px 0",
         "color_bg": "#222222",
-        "color_footer_heading": "#ffffff",
-        "color_footer_text": "#ffffff",
-        "color_footer_link": "#d4a533",
-        "color_footer_link_hover": "#ffc107"
+        "color_footer_heading": "#222222",
+        "color_footer_text": "#404040",
+        "color_footer_link": "#68815a",
+        "color_footer_link_hover": "#68815a"
       }
     },
     "copy-right": {
