@@ -301,7 +301,7 @@
         "padding_block": "20px 0 50px",
         "padding_block_m": "55px 0 60px",
         "margin_block": "",
-        "review_title": "Reviews",
+        "review_title": "Reviews{{ product.metafields.reviews.rating | metafield_text }}",
         "product_review": "tab"
       }
     },
