@@ -305,21 +305,6 @@
         "product_review": "tab"
       }
     },
-    "1723258444904f1e00": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true
-      }
-    },
-    "opinew-reviews-product-page-code": {
-      "type": "apps",
-      "custom_css": [
-
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "product-viewed": {
       "type": "product-viewed",
       "settings": {
@@ -343,8 +328,6 @@
     "main",
     "product-recommendations",
     "producttab-information",
-    "1723258444904f1e00",
-    "opinew-reviews-product-page-code",
     "product-viewed"
   ]
 }
