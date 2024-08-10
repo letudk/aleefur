@@ -93,12 +93,12 @@
       "settings": {
         "full_with": false,
         "max_with": "",
-        "padding_block": "0 0 60px",
-        "padding_block_m": "0 0 60px",
+        "padding_block": "0",
+        "padding_block_m": "0",
         "copyright": "Copyright ©  <span class=\"text-primary\">aleefurnishing<\/span>. All rights reserved.",
-        "color_bg": "#222222",
-        "color_copyright": "#6c6c6c",
-        "color_copyright_link": "#6c6c6c",
+        "color_bg": "#232f3e",
+        "color_copyright": "#eaeaea",
+        "color_copyright_link": "#68815a",
         "payment_enable": true,
         "social_enable": false
       }
