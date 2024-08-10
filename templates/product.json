@@ -71,6 +71,15 @@
             "product_question": true
           }
         },
+        "text_Dyk8yD": {
+          "type": "text",
+          "settings": {
+            "text": "<h4><strong>Your Delivery Options<\/strong><\/h4>",
+            "text_color": "",
+            "text_size": 15,
+            "block_margin": "mb-0"
+          }
+        },
         "cc6513a2-5262-43d7-b018-6cbea19b910e": {
           "type": "custom_liquid",
           "settings": {
@@ -88,7 +97,7 @@
         "text_CJWAD4": {
           "type": "text",
           "settings": {
-            "text": "<h5><strong>Description<\/strong><\/h5>",
+            "text": "<h4><strong>Description<\/strong><\/h4>",
             "text_color": "",
             "text_size": 15,
             "block_margin": "mb-0"
@@ -106,14 +115,51 @@
         "e12e8cbb-4fac-4586-a0ff-c439c75271d4": {
           "type": "text",
           "settings": {
-            "text": "<h5><strong>Product Details<\/strong><\/h5>",
+            "text": "<h4><strong>Product Details<\/strong><\/h4>",
             "text_color": "#222222",
             "text_size": 16,
             "block_margin": "mb-3"
           }
         },
+        "text_LGbeBA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Dimensions: <\/strong>{{ product.metafields.custom.dimensions.value }}<\/p>",
+            "text_color": "",
+            "text_size": 15,
+            "block_margin": "mb-0"
+          }
+        },
+        "text_QwXrYX": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Weight: <\/strong>{{ product.metafields.custom.weight.value }}<\/p>",
+            "text_color": "",
+            "text_size": 15,
+            "block_margin": "mb-0"
+          }
+        },
+        "text_pEgBAA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Style: <\/strong>{{ product.metafields.custom.style.value }}<\/p>",
+            "text_color": "",
+            "text_size": 15,
+            "block_margin": "mb-0"
+          }
+        },
+        "text_cPTArN": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Material: <\/strong>{{ product.metafields.custom.material.value }}<\/p>",
+            "text_color": "",
+            "text_size": 15,
+            "block_margin": "mb-0"
+          }
+        },
         "custom_liquid_gzPWAq": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "<div class=\"table-responsive-sm\">\n<table class=\"table table-striped table-borderless lh-1 mx-auto\" style=\"max-width: 900px;\">\n  <tbody>\n<tr>\n  <th class=\"p-3 fw-medium\">Weight (w\/o wheels)<\/th>\n  <td class=\"p-3\">20 LBS<\/td>\n  <\/tr>\n  <tr>\n  <th class=\"p-3 fw-medium\">Weight Capacity<\/th>\n  <td class=\"p-3\">60 LBS<\/td>\n  <\/tr>\n  <tr>\n  <th class=\"p-3 fw-medium\">Folded (w\/o wheels)<\/th>\n  <td class=\"p-3\">32.5\"L x 18.5\"W x 16.5\"H<\/td>\n  <\/tr>\n  <tr>\n  <th class=\"p-3 fw-medium\">Folded (w\/ wheels)<\/th>\n  <td class=\"p-3\">32.5\"L x 24\"W x 18.5\"H<\/td>\n  <\/tr>\n  <tr>\n  <th class=\"p-3 fw-medium\">Door Pass Through<\/th>\n  <td class=\"p-3\">24<\/td>\n  <\/tr>\n  <tr>\n  <th class=\"p-3 fw-medium\">Frame<\/th>\n  <td class=\"p-3\">Aluminum<\/td>\n  <\/tr>\n  <\/tbody>\n<\/table>\n<\/div>",
             "block_margin": "mb-0"
@@ -166,11 +212,16 @@
         "price",
         "c04d58d1-7e33-4924-875c-87b293144f76",
         "buy_buttons",
+        "text_Dyk8yD",
         "cc6513a2-5262-43d7-b018-6cbea19b910e",
         "d2556500-9561-429c-a87a-8081f074e2cb",
         "text_CJWAD4",
         "text_q9GYHb",
         "e12e8cbb-4fac-4586-a0ff-c439c75271d4",
+        "text_LGbeBA",
+        "text_QwXrYX",
+        "text_pEgBAA",
+        "text_cPTArN",
         "custom_liquid_gzPWAq",
         "custom_liquid_6fwmUa",
         "fb8bae5f-a47f-44ca-a4f4-caea832ea54d",
