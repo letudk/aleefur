@@ -52,7 +52,6 @@
         },
         "buy_buttons": {
           "type": "buy_buttons",
-          "disabled": true,
           "settings": {
             "block_margin": "mb-3",
             "product_selector": "radio",
@@ -61,7 +60,7 @@
             "product_unavailable_variants": "disable",
             "quantity_enabled": true,
             "quantity_selector": "select",
-            "enable_payment_button": true,
+            "enable_payment_button": false,
             "product_wishlist": true,
             "product_question": true
           }
