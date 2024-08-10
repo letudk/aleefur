@@ -16,7 +16,7 @@
       "settings": {
         "full_with": false,
         "max_with": "",
-        "color_bg": "#222222",
+        "color_bg": "#eaeaea",
         "padding_block": "90px 0 0",
         "padding_block_m": "60px 0 0",
         "margin_block": "",
@@ -36,7 +36,7 @@
           "settings": {
             "desk_width": 23,
             "title": "Support",
-            "menu": ""
+            "menu": "footer"
           }
         },
         "70983933-17cd-45a0-bcc5-d614521caf18": {
@@ -80,8 +80,8 @@
         "full_with": false,
         "max_with": "",
         "padding_block": "40px 0",
-        "padding_block_m": "60px 0",
-        "color_bg": "#222222",
+        "padding_block_m": "20px 0",
+        "color_bg": "#eaeaea",
         "color_footer_heading": "#222222",
         "color_footer_text": "#404040",
         "color_footer_link": "#68815a",
@@ -93,12 +93,12 @@
       "settings": {
         "full_with": false,
         "max_with": "",
-        "padding_block": "0 0 60px",
-        "padding_block_m": "0 0 60px",
+        "padding_block": "0",
+        "padding_block_m": "0",
         "copyright": "Copyright ©  <span class=\"text-primary\">aleefurnishing<\/span>. All rights reserved.",
-        "color_bg": "#222222",
-        "color_copyright": "#6c6c6c",
-        "color_copyright_link": "#6c6c6c",
+        "color_bg": "#232f3e",
+        "color_copyright": "#eaeaea",
+        "color_copyright_link": "#68815a",
         "payment_enable": true,
         "social_enable": false
       }
