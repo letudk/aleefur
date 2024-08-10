@@ -35,13 +35,6 @@
             "block_margin": "mb-2"
           }
         },
-        "491c3678-a254-4566-821b-051ef3bc6c42": {
-          "type": "reivew",
-          "disabled": true,
-          "settings": {
-            "block_margin": "mb-3"
-          }
-        },
         "price": {
           "type": "price",
           "settings": {
@@ -67,7 +60,7 @@
             "product_unavailable_variants": "disable",
             "quantity_enabled": true,
             "quantity_selector": "select",
-            "enable_payment_button": true,
+            "enable_payment_button": false,
             "product_wishlist": true,
             "product_question": true
           }
@@ -84,12 +77,13 @@
         "cc6513a2-5262-43d7-b018-6cbea19b910e": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{%- assign date = 'now' | date: '%s' -%}\n{%- assign seconds = 9 | times: 86400 -%}\n<div class=\"vela-estimate-delivery-label d-flex flex-wrap\">\n    <span class=\"icon me-2\">{% render 'icons', icon: 'truck-fast', attr: 'width=\"20\"' %}<\/span>\n    <span class=\"label me-1\">Estimated Delivery: <\/span><span class=\"text-primary\" data-bs-toggle=\"tooltip\" data-bs-placement=\"top\" data-bs-title=\"{{ 'now' | date: '%d %B, %Y' }} - {{ date | date: '%s' | plus: seconds | date: '%d %B, %Y' }}\">\n    {{ 'now' | date: '%d' }} - {{ date | date: \"%s\" | plus: seconds | date: \"%d %B,%Y\" }}<\/span>\n<\/div>",
+            "custom_liquid": "{%- assign date = 'now' | date: '%s' -%}\n{%- assign seconds = 9 | times: 86400 -%}\n<div class=\"vela-estimate-delivery-label d-flex flex-wrap\" style=\"margin:15px 0;\">\n    <span class=\"icon me-2\">{% render 'icons', icon: 'truck-fast', attr: 'width=\"20\"' %}<\/span> <strong style=\"font-size: 18px;\">Free Shipping<\/strong> <div class=\"w-100\">\n    <span class=\"label me-1\" style=\"margin-left: 30px;\">Estimated Delivery: <\/span><span class=\"text-primary\" data-bs-toggle=\"tooltip\" data-bs-placement=\"top\" data-bs-title=\"{{ 'now' | date: '%d %B, %Y' }} - {{ date | date: '%s' | plus: seconds | date: '%d %B, %Y' }}\">\n    {{ 'now' | date: '%d' }} - {{ date | date: \"%s\" | plus: seconds | date: \"%d %B,%Y\" }}<\/span>\n<\/div>",
             "block_margin": "mb-2"
           }
         },
         "d2556500-9561-429c-a87a-8081f074e2cb": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "<div class=\"vela-free-shipping-label\">\n    <span class=\"icon me-2\">{% render 'icons', icon: 'box', attr: 'width=\"16\"' %}<\/span>\n    <span class=\"label\">Free Shipping.<\/span>\n<\/div>",
             "block_margin": "mb-4"
@@ -209,7 +203,6 @@
       },
       "block_order": [
         "title",
-        "491c3678-a254-4566-821b-051ef3bc6c42",
         "price",
         "c04d58d1-7e33-4924-875c-87b293144f76",
         "buy_buttons",
@@ -309,16 +302,7 @@
         "padding_block_m": "55px 0 60px",
         "margin_block": "",
         "review_title": "Reviews",
-        "product_review": "bottom"
-      }
-    },
-    "opinew-reviews-product-page-code": {
-      "type": "apps",
-      "custom_css": [
-
-      ],
-      "settings": {
-        "include_margins": true
+        "product_review": "tab"
       }
     },
     "product-viewed": {
@@ -344,7 +328,6 @@
     "main",
     "product-recommendations",
     "producttab-information",
-    "opinew-reviews-product-page-code",
     "product-viewed"
   ]
 }
