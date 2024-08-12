@@ -99,16 +99,31 @@
     {% assign max_height_image = max_height_image | ceil %}
     {% assign images_size = '' | append: max_width_image | append: 'x' | append: max_height_image %}
 {%- endcapture -%}
-    <div class="card_wrap{% if image_class != '' %} {{ image_class }}{% endif %} w-100 card__image position-relative lazyload js" 
-    style="padding-top:{{ padding_top }}%;" role="img" {% if image_style %}style="max-width: {{ max_width_image }}px;"{% endif %}>
+    <div class="card_wrap{% if image_class != '' %} {{ image_class }}{% endif %} w-100" {% if image_style %}style="max-width: {{ max_width_image }}px;"{% endif %}>
+        {%- if image_style -%}
+            <div class="card__image position-relative lazyload js" style="padding-top:{{ padding_top }}%;" >
                 <img
                     class="position-absolute top-50 translate-middle-y start-0 w-100 h-auto"
-                    srcset="{% render 'bgset', image: image, crop: image_crops,image_ratio: image_ratio, images_size: images_size %}"
+                    srcset="{% render 'bgset', image: image, crop: image_crops,image_ratio: image_ratio, images_size: images_size, max_width_image: max_width_image %}"
                     data-sizes="auto"
                     src="{{ image | img_url: images_size, crop: image_crops }}"
                     alt="{{ image.alt | escape }}"
+                    loading="lazy"
                     width="{{ max_width_image }}"
-                    height="{{ max_height_image }}"  > 
+                    height="{{ max_height_image }}"
+                >
+                {%- render 'preloading', preload_class: 'position-absolute' -%}
+            </div>
+        {% else %}
+            <div class="card__image position-relative lazyload js" style="padding-top:{{ padding_top }}%;" role="img"
+            aria-label="{{ image.alt | escape }}"
+            data-alt="{{ image.alt | escape }}"
+            data-bgset="{% render 'bgset', image: image, crop: image_crops, image_ratio: image_ratio, images_size: images_size, max_width_image: max_width_image %}"
+            data-sizes="auto"
+            >
+                {%- render 'preloading', preload_class: 'position-absolute' -%}
+            </div>
+        {% endif %}
     </div> 
 
 {%- capture _ -%}
