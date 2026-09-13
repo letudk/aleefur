@@ -46,7 +46,7 @@
                             <div class="slick-carousel__item gallery___item">
                                 <a class="overflow-hidden{% unless section.settings.popup %} img-link{% endunless %}" target="_blank" href="{% if section.settings.popup %}{{ block.settings.image | img_url: 'master' }}{% else%}{{ block.settings.link }}{% endif %}">
                                     {%- if block.settings.image != blank -%}
-                                        {% render 'img-global' with image: block.settings.image, image_ratio: section.settings.image_ratio, crop: image_crop %}
+                                        {% render 'img-global' with image, image: block.settings.image, image_ratio: section.settings.image_ratio, crop: image_crop %}
                                     {%- else -%}
                                         {{ 'collection-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
                                     {%- endif -%}
@@ -325,4 +325,15 @@
             }
         ]
     }
-{% endschema %}
+{% endschema %}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'img-global' with image: block.settings.image, image_ratio: section.settings.image_ratio,
+    crop: image_crop %}"
+  to: "{% render 'img-global' with image, image: block.settings.image, image_ratio:
+    section.settings.image_ratio, crop: image_crop %}"
+  position: 2799..2925
+{%- endcomment -%}

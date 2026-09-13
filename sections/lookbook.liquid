@@ -20,7 +20,7 @@
         <div class="vela-section__inner">
             <div class="lookbook__content position-relative" style="--plh-svg-h: 600px;">
                 {%- if section.settings.image != blank -%}
-                    {% include 'img-global' with image: section.settings.image %}
+                    {% include 'img-global' with image, image: section.settings.image %}
                 {%- else -%}
                     {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
                 {%- endif -%}
@@ -193,4 +193,13 @@
             }
         ]
     }
-{% endschema %}
+{% endschema %}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% include 'img-global' with image: section.settings.image %}"
+  to: "{% include 'img-global' with image, image: section.settings.image %}"
+  position: 1085..1153
+{%- endcomment -%}
